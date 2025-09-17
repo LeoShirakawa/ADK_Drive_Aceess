@@ -79,7 +79,7 @@
     )
     ```
 
-5.  **`deploy.py` の作成:** このスクリプトはエージェントをVertex AIにデプロイします。
+5.  **`deploy.py` の作成:** このスクリプトはエージェントをVertex AI Agent Engineにデプロイします。
     ```python
     import vertexai
     from vertexai import agent_engines
