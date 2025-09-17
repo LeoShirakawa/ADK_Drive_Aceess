@@ -160,7 +160,7 @@ curl -X POST \
   -H "X-Goog-User-Project: $PROJECT_ID" \
   "https://discoveryengine.googleapis.com/v1alpha/projects/$PROJECT_ID/locations/global/authorizations?authorizationId=$AUTH_ID" \
   -d '{
-    "name": "projects/ப்புகளை$PROJECT_ID/locations/global/authorizations/$AUTH_ID",
+    "name": "projects/'$PROJECT_ID'/locations/global/authorizations/'$AUTH_ID'",
     "serverSideOauth2": {
       "clientId": "$OAUTH_CLIENT_ID",
       "clientSecret": "$OAUTH_CLIENT_SECRET",
@@ -218,7 +218,7 @@ curl -X POST \
         "tool_description": "ユーザーのGoogle Driveにあるファイルやフォルダを一覧表示する必要がある場合に使用します。"
       },
       "provisioned_reasoning_engine": {
-        "reasoning_engine": "projects/ப்புகளை$PROJECT_ID/locations/us-central1/reasoningEngines/$ADK_DEPLOYMENT_ID"
+        "reasoning_engine": "projects/'$PROJECT_ID'/locations/us-central1/reasoningEngines/'$ADK_DEPLOYMENT_ID'"
       }
     },
     "authorization_config": {
